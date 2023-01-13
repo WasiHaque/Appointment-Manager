@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Apointment Manager</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h> Appointment Manager</h>
+</body>
+
+<body2>
+  <p>This is where you can book an online appointment for a lesson.</p>
+
+  <p>Please enter a date and time to book an appointment:</p>
+
+     <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <label for="date">Date:</label><br>
+    <input type="date" id="date" name="date"><br>
+    <label for="time">Time:</label><br>
+    <input type="time" id="time" name="time"><br><br>
+       <input type="submit" value="Submit" onclick="addAppointment()">
+  </form>  
+
+    <table id="appointments">
+    <tr>
+      <th>Name</th>
+      <th>Email</th> 
+      <th>Date</th>
+      <th>Time</th>
+    </tr>
+  </table>
+
+  
+<button id="reset-button" onclick="resetAppointments()">Reset</button>
+  <script src="script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
